@@ -42,6 +42,14 @@ var moreAisles = function(numberOne, numberTwo) {
 	return chips + " " + coffee
 }
 
+//array
+var aislesDone = function(aisleName, number) {
+	for (var done = number; done < aisles.length; done++) {
+		console.log("I have finished " + aisles[done] + ".");
+	};
+	return aisleName + number;
+};
+
 //fxn calls
 longDay(aisles.length)
 
@@ -53,3 +61,6 @@ console.log("\"Bill, I don't need anymore carts.  I'll be here until 11.\"")
 
 var tooManyAisles = moreAisles(additionalAisle1, additionalAisle2);
 console.log(tooManyAisles)
+
+var array = aislesDone(aisles[0], 0)
+console.log("Since " + aisles[0] + ", " + aisles[1] + ", and " + aisles[2] + " are all done, and other stockers are finishing, they come to help me finish by 6:30, not 11.")
