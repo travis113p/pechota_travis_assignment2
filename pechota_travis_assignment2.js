@@ -14,8 +14,21 @@ var longDay = function(numOfAisles) {
 	};
 };
 
+//boolean
+var casesPerHour = function(met, notMet) {
+	if (notMet < met) {
+		var casesPerHour = true;
+	} else {
+		var casesPerHour = false;
+	};
+	return casesPerHour;
+};
 
+//
 
 
 //fxn calls
 longDay(aisles.length)
+
+var yelledAt = casesPerHour(70,40)
+console.log("I have not met my quota, it is " + yelledAt + " that I will most likely be scolded.")
